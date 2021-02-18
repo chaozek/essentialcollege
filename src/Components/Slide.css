@@ -1,0 +1,74 @@
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem 3rem 0rem 3rem;
+  border-radius: 1rem;
+  cursor: default;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+
+.slide {
+  background-color: #ebfffc;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.slide h1 {
+  padding: 4rem 0rem;
+}
+.slide p {
+  padding-top: 2rem;
+  color: #3eb2bc;
+  margin: 0;
+}
+.slick-list {
+  cursor: grab;
+  position: relative;
+}
+.slick-slide > div {
+  padding: 0 10px;
+}
+.slick-slide {
+  margin: 5rem 0rem;
+}
+.slick-dots li.slick-active button:before {
+  color: #41abb5 !important;
+}
+.slick-dots li button:before {
+  color: #b6e2e6 !important;
+}
+
+.btn-left:before,
+.btn-right:before {
+  color: #3eb2bc !important;
+  font-size: 40px !important;
+  z-index: 99 !important;
+}
+.play {
+  color: #3eb2bc;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.play:hover {
+  color: #21929c;
+}
+
+@media screen and (max-width: 1400px) {
+  .btn-left,
+  .btn-right {
+    margin-left: -10rem;
+  }
+} ;

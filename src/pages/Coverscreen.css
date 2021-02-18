@@ -1,0 +1,133 @@
+.cover-logo {
+  padding: 2rem;
+}
+
+.cover-page {
+  height: 100vh;
+  margin: 0 auto;
+}
+.cover {
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.cover h1 {
+  font-weight: 300;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex: 1 1 40rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0rem 1rem;
+  transition: 0.5s ease-in-out;
+}
+.left {
+  border-right: 2px solid rgb(187, 187, 187);
+}
+.right {
+  position: relative;
+  background-image: url(../imgs/ec_student.png);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position: bottom right;
+  background-size: 50%;
+  animation: mymove 5s infinite;
+}
+.left {
+  position: relative;
+  background-image: url(../imgs/oranzova.png);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position: bottom left;
+  background-size: 50%;
+}
+.abstract {
+  position: absolute;
+  top: 80%;
+  right: -20%;
+  width: 30%;
+}
+
+.btn-cover::content {
+  background: var(--ec-text);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+}
+
+.btn-cover {
+  border-radius: 4px;
+  background: var(--ec-text);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-cover span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-cover span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.btn-cover:hover span {
+  padding-right: 25px;
+}
+
+.btn-cover:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.ec {
+  background: #f58220;
+}
+.cover a {
+  font-size: 2rem;
+}
+.active {
+  background-color: #b9fff363;
+}
+.activeLeft {
+  background-color: #ffb16d54;
+}
+.social {
+  max-width: 40rem;
+  position: absolute;
+  bottom: 1em;
+}
+.social img {
+  width: 40px;
+  margin: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.social img:hover {
+  transform: scale(1.1);
+}

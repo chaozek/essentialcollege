@@ -1,0 +1,47 @@
+.article {
+  overflow: hidden;
+}
+.article-section {
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1970px;
+}
+
+.article .article-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.article-left {
+  flex: 1 1 15rem;
+}
+.article-right {
+  flex: 2 1 20rem;
+  padding: 2rem;
+  padding-right: 12%;
+}
+.article-img {
+  display: block;
+  margin-left: -5rem;
+  max-width: 100%;
+}
+.article {
+  margin-top: 5rem;
+}
+.article img {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 780px) {
+  .article-right-right img {
+    width: 50%;
+  }
+  .article-right-right {
+    margin: 0;
+  }
+  .article-left-right {
+    flex: 100%;
+    margin-top: 0rem;
+  }
+}
