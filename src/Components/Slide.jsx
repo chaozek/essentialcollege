@@ -4,8 +4,7 @@ import "./Slide.css"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import lektori from "./data-lektori"
-import sebek from "../imgs/Screenshot_1.png"
-import { FaRegPlayCircle } from "react-icons/fa"
+import { FiPlay } from "react-icons/fi";
 
 import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
@@ -41,7 +40,7 @@ export default function Slide() {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     initialSlide: 2,
     rows: 1,
     nextArrow: <SampleNextArrow />,
@@ -50,7 +49,7 @@ export default function Slide() {
       {
         breakpoint: 1424,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 2,
           infinite: true,
           dots: true,
@@ -62,7 +61,7 @@ export default function Slide() {
         breakpoint: 1224,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
           rows:1 
@@ -73,8 +72,8 @@ export default function Slide() {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
           rows:1 
 
         }
@@ -82,8 +81,8 @@ export default function Slide() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
@@ -102,11 +101,11 @@ export default function Slide() {
 
           {lektori.map((lektor, id) => {
             return (
-              <div  className="card" onClick={()=>{setVideoId(lektor.id)}}>
+              <div key={id}  className="card" style={{ height: "400px" }} onClick={()=>{setVideoId(lektor.id)}}>
                 <h3>{ lektor.title}</h3>
                 <h4>{lektor.name}</h4>
                 <p>Více informací</p>
-                <FaRegPlayCircle className="play" onClick={() => setOpen(true)}/>
+                <FiPlay className="play" onClick={() => setOpen(true)}/>
                 <img src={lektor.photo} alt="" />
                 </div>
 

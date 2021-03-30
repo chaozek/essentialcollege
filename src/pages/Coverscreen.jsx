@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 import "./Coverscreen.css"
 import img from "../imgs/UAM-LOGO_header.png"
 import ec from "../imgs/ec.png"
-import abstract from "../imgs/Path_3.png"
-import fb from "../imgs/fb.png"
+import fb from "../imgs/FB_3.png"
 import web from "../imgs/web.png"
 import yt from "../imgs/yt.png"
 import ig from "../imgs/ig.png"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+
 export default function Coverscreen() {
     const [active, setActive] = useState(false)
     const [activeLeft, setActiveLeft] = useState(false)
@@ -27,24 +27,26 @@ export default function Coverscreen() {
 
 
     return (
-        <div className="cover-page"> 
+        <div className="cover-page fade-in"> 
             <div className="cover">
             <div className={activeLeft===true? "left activeLeft": "left"}>
-                <h1>Fakulta celoživotního vzdělávání<br/> <span>pro podnikatele, obchodníky a další...</span></h1>
+                    <h2>Fakulta celoživotního vzdělávání<br /> </h2>
+                    <span>pro podnikatele, obchodníky a další...</span>
                     <img className="cover-logo" src={img} alt="xxx" />
-                    <button className="btn-cover ec" onMouseOver={handleMouseOverLeft} onMouseLeave={handleMouseLeaveLeft}><a href="http://universityam.com/"><span>Přejít</span></a></button>
+                    <button className="btn-cover ec" onMouseOver={handleMouseOverLeft} onMouseLeave={handleMouseLeaveLeft}><a href="http://universityam.com/"><span>universityam.cz</span></a></button>
 
             </div>
             <div className={active===true? "right active": "right"}>
-                <h1>Fakulta praktického vzdělávání<br/> <span>pro absolventy středních škol</span></h1>
+                    <h2>Fakulta praktického vzdělávání<br /> </h2>
+                    <span>pro absolventy středních škol</span>
                     <img className="cover-logo" src={ec} alt="xxx" />
-                    <Link to="/home"> <button className="btn-cover" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} ><span>Přejít</span></button></Link>
-                </div>
+                    <Link to="/doma"> <button className="btn-cover" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} ><span>essentialcollege.cz</span></button></Link>
                 <div className="social">
                 <img src={fb} alt="x"/>
                 <img src={web} alt="x"/>
                 <img src={yt} alt="x"/>
                 <img src={ig} alt="x"/>
+                </div>
 
                 </div>
             </div>

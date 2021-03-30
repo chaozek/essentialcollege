@@ -45,8 +45,8 @@
 .postup {
   display: flex;
   justify-content: space-between;
-  margin-left: 1rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 .accept {
   display: flex;
@@ -68,10 +68,15 @@
     padding-right: 12%;
   }
   .article-img-right {
-    margin-left: 19rem;
+    margin-left: 13rem;
   }
   .article-right {
     flex: 100%;
     margin-top: 0rem;
   }
+}
+@media screen and (max-width: 780px) {
+}
+.article-img-right {
+  margin-left: 8rem;
 }

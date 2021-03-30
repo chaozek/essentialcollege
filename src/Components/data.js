@@ -1,18 +1,18 @@
-import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
+import { IoChevronForwardOutline } from "react-icons/io5";
 import React from "react";
 
 const sublinks = [
   {
-    page: "O škole",
+    page: "Pro uchazeče",
     links: [
       {
         label: "Fakulta praktického vzdělávání      ",
-        icon: <FaCreditCard />,
+        icon: <IoChevronForwardOutline />,
         url: "/products",
       },
       {
         label: "Fakulta profesního vzdělávání ​",
-        icon: <FaCreditCard />,
+        icon: <IoChevronForwardOutline />,
         url: "/products",
       },
     ],
@@ -20,41 +20,73 @@ const sublinks = [
   {
     page: "Katedry",
     links: [
-      { label: "Podnikání a obchod", icon: <FaBook />, url: "/products" },
+      {
+        label: "Podnikání a obchod",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#podnikani_a_obchod",
+      },
       {
         label: "Management a leadership",
-        icon: <FaBook />,
-        url: "/products",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#management_a_leadership",
       },
       {
         label: "Informační systémy a technologie",
-        icon: <FaBook />,
-        url: "/products",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#informacni_systemy",
       },
-      { label: "PR a marketing", icon: <FaBook />, url: "/products" },
+      {
+        label: "PR a marketing",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#pr_a_marketing",
+      },
       {
         label: "Psychologie a komplexní personalistika",
-        icon: <FaBook />,
-        url: "/products",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#psychologie",
       },
-      { label: "Ekonomika a finance", icon: <FaBook />, url: "/products" },
-      { label: "Právo ", icon: <FaBook />, url: "/products" },
-      { label: "Kvalita", icon: <FaBook />, url: "/products" },
-      { label: "Výroba a produkce", icon: <FaBook />, url: "/products" },
+      {
+        label: "Ekonomika a finance",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#ekonomika",
+      },
+      {
+        label: "Právo ",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#pravo",
+      },
+      {
+        label: "Kvalita",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#kvalita",
+      },
+      {
+        label: "Výroba a produkce",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#vyroba",
+      },
       {
         label: "Historie, politologie a vývoj chování organizací",
-        icon: <FaBook />,
-        url: "/products",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#historie",
       },
-      { label: "Jazykové vzdělávání", icon: <FaBook />, url: "/products" },
-      { label: "Biohacking", icon: <FaBook />, url: "/products" },
+      {
+        label: "Jazykové vzdělávání",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#jazyk",
+      },
+      {
+        label: "Biohacking",
+        icon: <IoChevronForwardOutline />,
+        url: "/katedry/#biohacking",
+      },
     ],
   },
   {
     page: "Partneři",
     links: [
-      { label: "Naši partneři", icon: <FaBriefcase />, url: "/products" },
-      { label: "Staňte se partnerem", icon: <FaBriefcase />, url: "/products" },
+      { label: "Naši partneři", icon: <IoChevronForwardOutline />, url: "/products" },
+      { label: "Staňte se partnerem", icon: <IoChevronForwardOutline />, url: "/products" },
     ],
   },
 ];

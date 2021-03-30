@@ -1,0 +1,55 @@
+.soutez-card {
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  margin: 3rem 0rem;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+}
+.soutez-card img {
+  max-width: 150px;
+}
+.soutez-card h1 {
+  font-size: 2rem;
+}
+.soutez_card_left {
+  flex: 1 1 1rem;
+  text-align: center;
+}
+.soutez_card_right {
+  padding-left: 2rem;
+  flex: 1 1 30rem;
+}
+
+@media screen and (max-width: 600px) {
+  .soutez-card {
+    padding: 1rem 2rem;
+  }
+  button {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 993px) {
+  .loga img {
+    padding: 0px;
+    margin: 0 !important;
+    padding-bottom: 2rem;
+  }
+}
+.loga img:first-child {
+  padding-bottom: 40px;
+}
+.loga img:last-child {
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+.loga img {
+  margin-left: 8rem;
+}
+.margin-top {
+  margin-top: 7rem;
+}

@@ -1,5 +1,6 @@
 .article {
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 .article-section {
   width: 100vw;

@@ -12,7 +12,7 @@ export default function Hodnoty() {
                     <h1>Naše hodnoty</h1>
                 {hodnoty.map((hodnota, index) => {
                     return (
-                        <div className="hodnota">
+                        <div key={index} className="hodnota">
                         <h4>{hodnota.title}</h4>
                             <p>{hodnota.name}</p>
                             

@@ -15,8 +15,13 @@
   text-align: center;
   flex-wrap: wrap;
 }
-.cover h1 {
-  font-weight: 300;
+
+.cover h2 {
+  font-weight: 700;
+}
+span {
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 .left,
@@ -27,7 +32,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   position: relative;
   overflow: hidden;
   padding: 0rem 1rem;
@@ -44,6 +49,7 @@
   background-position: bottom right;
   background-size: 50%;
   animation: mymove 5s infinite;
+  position: relative;
 }
 .left {
   position: relative;
@@ -69,18 +75,20 @@
 }
 
 .btn-cover {
-  border-radius: 4px;
+  border-radius: 2px;
   background: var(--ec-text);
   border: none;
   color: #ffffff;
   text-align: center;
   font-size: 2rem;
-  padding: 1rem 3rem;
+  padding: 0.5rem 2rem 1rem 2rem;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
-
+.btn-cover {
+  background-color: #28a0a1;
+}
 .btn-cover span {
   cursor: pointer;
   display: inline-block;
@@ -111,16 +119,14 @@
 .cover a {
   font-size: 2rem;
 }
-.active {
-  background-color: #b9fff363;
-}
-.activeLeft {
-  background-color: #ffb16d54;
-}
+
 .social {
   max-width: 40rem;
   position: absolute;
   bottom: 1em;
+}
+a {
+  color: white;
 }
 .social img {
   width: 40px;
@@ -130,4 +136,64 @@
 }
 .social img:hover {
   transform: scale(1.1);
+}
+.btn-cover span {
+  font-size: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .cover {
+    margin: 0 auto;
+    display: block;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  span {
+    font-size: 0.5rem;
+  }
+  .cover-logo {
+    padding: 0;
+  }
+  .btn-cover {
+    padding: 0rem 0.4rem;
+  }
+  .btn-cover span {
+    padding: 0;
+    font-size: 0.71rem;
+  }
+  .btn-cover a {
+    padding: 0;
+    margin: 0;
+  }
+  .right {
+    background-size: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .left {
+    background-size: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding-bottom: 5rem;
+  }
+  .cover-logo {
+    width: 100px;
+  }
+  .social {
+    position: absolute; /* or absolute */
+    top: 60%;
+    left: auto;
+  }
+
+  .social img {
+    width: 20px;
+  }
 }

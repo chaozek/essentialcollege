@@ -21,21 +21,11 @@ export default function Sidebar() {
                       const { links, page } = item;
                       return (
                           <article key={index}>
-                              <h4>{page}</h4>
-                              <div className="sidebar-sublinks">
-                                  {links.map((link, index) => {
-                                      const { url, icon, label } = link
-                                      return (
-                                          <a key={index} href={url}>
-                                              {icon}
-                                              {label}
-                                          </a>
-                                      )
-                                  })}
-                              </div>
+                              <h4><a href={`${item.url}`}>{page}</a></h4>
                           </article>
                       )
                   })}
+                  <img className="sidebar-logo" src={img} alt=""/>
               </div>
             </div>
         </aside>

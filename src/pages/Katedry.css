@@ -1,0 +1,15 @@
+.lektori_bloky img {
+  max-width: 300px;
+  width: 40rem !important;
+}
+.lektor_block {
+  width: 400px !important;
+}
+.lektor-block {
+  margin: 0;
+  padding: 0;
+}
+br {
+  margin: 2.5em 0; /* FF for instance */
+  line-height: 5em; /* chrome for instance */
+}

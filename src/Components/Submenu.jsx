@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useGlobalContext } from '../context';
+import { Link } from "react-router-dom"
 
 const Submenu = () => {
   const {
@@ -15,7 +16,6 @@ const Submenu = () => {
     const { center, bottom } = location
     submenu.style.left = `${center}px`
     submenu.style.top = `${bottom}px`
-    console.log(links)
     if (links.length === 3) {
       setColumns('col-3')
     }
@@ -28,13 +28,15 @@ const Submenu = () => {
       className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`}
       ref={container}
     >
+      {console.log(page)}
       <section>
         <h4>{page}</h4>
         <div className={`submenu-center ${columns}`}>
           {links.map((link, index) => {
-            const { url, icon, label } = link
+            const { url, icon, label, catch_id } = link
             return (
-              <a key={index} href={url}>
+              <a href={url}  key={index}
+              >
                 {icon}
                 {label}
               </a>
